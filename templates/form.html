@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form method="POST">
+            <label for="currency">Wybierz walutę:</label>
+            <select name="currency" id="currency">
+                <option value="USD">Dolar Amerykański</option>
+                <option value="AUD">Dolar Australijski</option>
+                <option value="CAD">Dolar Kanadyjski</option>
+                <option value="EUR">Euro</option>
+                <option value="HUF">Forint</option>
+                <option value="CHF">Frank Szwajcarski</option>
+                <option value="GBP">Funt Szterling</option>
+                <option value="JPY">Jen</option>
+                <option value="CZK">Korona Czeska</option>
+                <option value="DKK">Korona Duńska</option>
+                <option value="NOK">Korona Norweska</option>
+                <option value="SEK">Korona Szwedzka</option>
+                <option value="XDR">SDR(MFW)</option>
+            </select>
+            <br>
+            <label for="amount">Ilość:</label>
+            <input type="number" name="amount" id="amount">
+            <br>
+            <button type="submit">Prześlij</button>
+        </form>
+        {% if output %}
+        {{ output }}
+        {% endif %}
+    </body>
+</html>
